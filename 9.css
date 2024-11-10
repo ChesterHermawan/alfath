@@ -1,0 +1,109 @@
+/* General styling */
+@font-face {
+  font-family: "OverusedGrotesk";
+  src: url("/OverusedGrotesk-VF.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* General Styles */
+body {
+  font-family: "OverusedGrotesk";
+  margin: 0;
+  background-color: white;
+  color: black;
+  overflow-x: hidden;
+}
+
+/* Header styling */
+.header-title {
+  text-align: center;
+  margin: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Main content styling */
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.profile-section {
+  width: 60%;
+  padding-right: 20px;
+  text-align: center;
+}
+
+.profile-image {
+  width: 250px;
+  height: auto;
+  border-radius: 8px;
+  margin-right: -300px;
+  align-items: center;
+}
+
+.profile-description {
+  max-width: 600px;
+  line-height: 1.6;
+  font-size: 16px;
+  margin-left: 300px;
+}
+
+/* Sidebar Styling */
+.sidebar {
+  width: 250px;
+  text-align: right;
+  position: sticky;
+  top: 20px;
+}
+
+/* Logo inside Sidebar */
+.sidebar img {
+  width: 250px;
+  height: auto;
+  transform: rotate(25deg);
+  margin-top: 20px;
+}
+
+/* Sidebar Index Links */
+.index {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.sidebar .index a {
+  display: block;
+  color: gray;
+  text-decoration: none;
+  margin: 5px 0;
+}
+
+/* Footer in Sidebar */
+.sidebar .footer {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+/* Footer styling with social logos */
+.footer {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  background-color: #f8f8f8;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer .social-logo {
+  width: 30px;
+  height: 30px;
+  margin: 0 10px;
+  transition: transform 0.2s;
+}
+
+.footer .social-logo:hover {
+  transform: scale(1.1);
+}
