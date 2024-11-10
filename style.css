@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: overused-grotesk;
+    src: url(C:\Users\thebe\Downloads\Alfath2\Alfath2\OverusedGrotesk-VF.woff);
+}
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1000px;
+    width: 90%;
+    padding: 20px;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 1.5em;
+    font-weight: normal;
+    color: #333;
+}
+
+.header p {
+    font-size: 0.9em;
+    color: gray;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px 0;
+}
+
+.book-cover img {
+    width: 400px;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.index {
+    text-align: right;
+    padding-left: 20px;
+}
+
+.index h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.index ul {
+    list-style-type: none;
+    line-height: 1.8;
+    font-size: 1em;
+}
+
+.index ul li {
+    color: #555;
+}
+
+.index ul li:hover {
+    color: #000;
+}
+
+.footer {
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #666;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.footer a:hover {
+    color: #555;
+}
+
+/* Container for the image and tooltip */
+.tooltip-container {
+    position: relative;
+    display: inline-block;
+}
+
+/* Style the image */
+.tooltip-image {
+    width: 300px; /* Adjust the width as needed */
+    height: auto;
+}
+
+/* Style for the tooltip text */
+.tooltip-text {
+    visibility: hidden; /* Hide tooltip initially */
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: overused-grotesk;
+    /* New font size for smaller text */
+    font-size: 13px; /* Adjust the font size as needed */
+    
+    /* Position the tooltip */
+    position: absolute;
+    bottom: 110%; /* Position it above the image */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    opacity: 0; /* Start with opacity 0 */
+    transition: opacity 0.3s; /* Smooth fade-in effect */
+}
+
+/* Tooltip arrow */
+.tooltip-text::after {
+    content: "";
+    position: absolute;
+    top: 100%; /* Position arrow at the bottom of the tooltip */
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.8) transparent transparent transparent;
+}
+
+/* Show the tooltip on hover */
+.tooltip-container:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1; /* Make tooltip visible with smooth transition */
+}
