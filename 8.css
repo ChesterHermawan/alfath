@@ -1,0 +1,30 @@
+@font-face {
+    font-family: 'OverusedGrotesk';
+    src: url('fonts/OverusedGrotesk-VF.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    font-family: 'OverusedGrotesk',;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.simple-link {
+    font-size: 16px; /* Adjust size as needed */
+    text-align: center;
+}
+
+.simple-link a {
+    color: black;
+    text-decoration: none;
+}
+
+.simple-link a:hover {
+    text-decoration: underline;
+}
